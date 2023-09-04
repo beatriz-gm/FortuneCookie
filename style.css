@@ -12,7 +12,7 @@ body {
   background: linear-gradient(45deg, #190361, #bb00ff);
   display: grid;
   place-items: center;
-  height: 100vh;
+  height: 70vh;
 
   animation: gradient 10s ease infinite;
   background-size: 200% 200%;
@@ -24,19 +24,19 @@ body {
 
 main div {
   background: #FFFFFF;
-  width: 42.8rem;
+  width: 28rem;
   border-radius: 5px;
   box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
   text-align: center;
 }
 
 .screen1 {
-  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
-  animation: popUp .7s forwards ease-in-out;
+  padding: 2rem 2rem 2rem 2rem;
+  
 }
 
 .screen2 {
-  padding: 4.8rem 6.4rem;
+  padding: 2rem;
 }
 
 h1 {
@@ -50,7 +50,7 @@ h2 {
 h1,
 h2 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 2.4rem;
+  font-size: 1.9rem;
   font-weight: 700;
   text-align: center;
   color: #34355B;
@@ -68,10 +68,10 @@ h2 {
 #luckyMessage {
   color: #000;
   font-family:'Dancing Script', cursive;
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 400;
   text-align: center;
-  margin: 1.7rem auto;
+  margin: 1.5rem auto 0;
 
   background: #E4EDF1;
   box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
@@ -84,6 +84,9 @@ h2 {
 
 .screen2 img {
   animation: open 3s ease-in-out;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .screen1 p {
@@ -96,7 +99,7 @@ h2 {
 p,
 button {
   font-family: 'DM Sans', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   text-align: center;
 }
 
@@ -106,10 +109,10 @@ button {
 
   border-radius: 4px;
   background: #FF9500;
-  padding: 1.6rem;
+  padding: 1.1rem;
   border: none;
 
-  margin-top: 1.7rem;
+  margin-top: 1rem;
 }
 
 button:hover {
@@ -117,6 +120,35 @@ button:hover {
   background: #ec8a00;
   margin-top: 1.5rem;
   cursor: pointer;
+}
+
+@media(min-width: 768px) {
+  body {
+    height: 100vh;
+  }
+  main div {
+    width: 42.8rem;
+  }
+  h1, h2, #luckyMessage {
+    font-size: 2.4rem;
+  }
+  #luckyMessage {
+    margin: 1.7rem auto;
+  }
+  p, button {
+  font-size: 1.5rem;
+  }
+  .screen1 {
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    animation: popUp .7s forwards ease-in-out;
+  }
+  .screen2 {
+    padding: 4.8rem 6.4rem;
+  }
+  button {
+    padding: 1.6rem;
+    margin-top: 1.7rem;
+  }
 }
 
 @keyframes gradient {
