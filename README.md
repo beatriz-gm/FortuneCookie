@@ -20,4 +20,4 @@
 - CSS
 - JavaScript
 
-# By: [Beatriz Galvão](https://www.linkedin.com/in/beatriz-galmed/) 
+# By: [Beatriz Galvão](https://www.linkedin.com/in/beatriz-galmed/) 💜
